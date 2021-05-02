@@ -2,26 +2,50 @@ let map;
 
 let customStyle = [
     {
-        "featureType": "water",
-        "elementType": "geometry",
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
         "stylers": [
             {
-                "color": "#e9e9e9"
-            },
-            {
-                "lightness": 17
+                "color": "#686868"
             }
         ]
     },
     {
         "featureType": "landscape",
-        "elementType": "geometry",
+        "elementType": "all",
         "stylers": [
             {
-                "color": "#f5f5f5"
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
             },
             {
-                "lightness": 20
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
             }
         ]
     },
@@ -30,10 +54,7 @@ let customStyle = [
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 17
+                "lightness": "-22"
             }
         ]
     },
@@ -42,13 +63,64 @@ let customStyle = [
         "elementType": "geometry.stroke",
         "stylers": [
             {
-                "color": "#ffffff"
+                "saturation": "11"
             },
             {
-                "lightness": 29
+                "lightness": "-51"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "saturation": "3"
             },
             {
-                "weight": 0.2
+                "lightness": "-56"
+            },
+            {
+                "weight": "2.20"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "lightness": "-52"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "weight": "6.13"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "lightness": "-10"
+            },
+            {
+                "gamma": "0.94"
+            },
+            {
+                "weight": "1.24"
+            },
+            {
+                "saturation": "-100"
+            },
+            {
+                "visibility": "off"
             }
         ]
     },
@@ -57,78 +129,33 @@ let customStyle = [
         "elementType": "geometry",
         "stylers": [
             {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 18
+                "lightness": "-16"
             }
         ]
     },
     {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#f5f5f5"
-            },
-            {
-                "lightness": 21
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#dedede"
-            },
-            {
-                "lightness": 21
-            }
-        ]
-    },
-    {
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#ffffff"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
+        "featureType": "road.arterial",
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "saturation": 36
+                "saturation": "-41"
             },
             {
-                "color": "#333333"
-            },
-            {
-                "lightness": 40
+                "lightness": "-41"
             }
         ]
     },
     {
+        "featureType": "road.arterial",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "weight": "5.46"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
         "elementType": "labels.icon",
         "stylers": [
             {
@@ -137,41 +164,44 @@ let customStyle = [
         ]
     },
     {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#f2f2f2"
-            },
-            {
-                "lightness": 19
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
+        "featureType": "road.local",
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#fefefe"
+                "weight": "0.72"
             },
             {
-                "lightness": 20
+                "lightness": "-16"
             }
         ]
     },
     {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
+        "featureType": "road.local",
+        "elementType": "labels.text.fill",
         "stylers": [
             {
-                "color": "#fefefe"
+                "lightness": "-37"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#b7e4f4"
             },
             {
-                "lightness": 17
-            },
-            {
-                "weight": 1.2
+                "visibility": "on"
             }
         ]
     }
@@ -186,7 +216,7 @@ let customStyle = [
 function initMap() {
 
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 53.876448580465336, lng: 27.495022965538052 },
+        center: { lat: 53.87956993859402, lng: 30.264275882480185 },
         zoom: 15,
         styles: customStyle,
         
@@ -198,18 +228,6 @@ function initMap() {
             icon: 'mapicon.png',
             map: map
         })
-    map2 = new google.maps.Map(document.getElementById("map2"), {
-        center: { lat: 52.39539240263219, lng: 31.078935982931995 },
-        zoom: 15,
-        styles: customStyle,
-    }),
-
-        marker = new google.maps.Marker({
-
-            position: map2.getCenter(),
-            icon: 'mapicon.png',
-            map: map2,
-            
-        })
+  
 
 }

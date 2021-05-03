@@ -29,6 +29,7 @@ ul, li {
  
 color: #fff;
 display: flex;
+flex-direction: row;
 align-items: center;
 padding: 10px 15px;
 position: fixed;
@@ -38,6 +39,8 @@ font-size: 0.9rem;
 }
 .logo__text{
 flex-grow: 1;
+white-space: nowrap;
+font-size: 20px;
 }
 .header__logo{
     width: 45px;
@@ -51,7 +54,25 @@ flex-grow: 1;
 .nav__item:hover{
 color: rgba(255, 255, 255, 0.747);
 }
-
+.mobile{
+    display: none;
+}
+.burger{
+    background-image: url(../img/burger.svg);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    display: block;
+    fill: #fff;
+    margin-left: 15px;
+    
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
 .cta{
     color: #fff;
     
@@ -428,4 +449,28 @@ footer{
 .footer__item{
     font-size: 0.8rem;
     color: rgba(212, 212, 212, 1);
+}
+
+
+
+@media screen and (max-width: 1080px){
+    .logo__text{
+        display: none;
+    }
+    .header__logo{
+        margin-right: auto;;
+    }
+    .nav__list{
+        grid-gap: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .nav__list{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+        
+    }
 }

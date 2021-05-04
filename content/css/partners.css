@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+
+/*Header*/
+
+header{
+    width: 100%;
+    background: #23262a;
+    
+}
+.header_top{
+    max-width: 1140px;
+    min-height: 7vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.header_top_wrap{
+    max-width: 1140px;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+height: 40px;
+}
+.logo span{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+/*MAIN*/
+main{
+    background-color: #D9D9DA;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: #D9D9DA;
+    min-height: 81vh;
+}
+.wrap{
+    padding: 20px;
+}
+.wrap img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #23262A;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 1rem;
+    }
+    .wrap p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        color: #23262A;
+        font-weight: 400;
+        }
+.clearfix{
+    clear: both;
+}
+
+
+button {
+    width: 180px;
+    height: 40px;
+    flex-basis: 50px;
+    color: #fff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    background-color: #a40808;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+margin: 1,5rem 0;
+margin-top: 1.5rem;
+margin-bottom: 3rem;
+transition: border .5s ease-in-out ;
+}
+button:hover{
+    border:3px solid #d60606;
+    transition: all .5s ease-in-out ;
+    background-color: #fff;
+    color: #a40808;
+}
+/* FOOTER */
+footer{
+    min-height: 10vh;
+    background-color: #23262a;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+.container_footer{
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.divider{
+    height: 0.8rem;
+    border-left: 1px solid #d9d9da;
+    margin: 0 10px;
+}
+.copyright{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.desinger{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+footer a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #d9d9da;
+    font-size: 0.8rem;
+    opacity: 0.7;
+    white-space: nowrap;
+}
+footer a p strong{
+font-weight: 600;
+}
+footer a:hover{
+    opacity: 1;
+}

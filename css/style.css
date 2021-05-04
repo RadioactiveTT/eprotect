@@ -180,10 +180,12 @@ transform: translateX(-50%);
 }
 .cta__subheader{
 font-size: 2rem;
+text-align: center;
 }
 
 .cta__slide-header{
     font-size: 3rem;
+    text-align: center;
 }
 .cta__slide-text{
 width: 70%;
@@ -246,7 +248,7 @@ padding: 30px 25px;
 }
 .features__item
 {
-    max-width: 180px;
+    max-width: 200px;
 }
 .capabilities__item::before,
 .features__item::before,
@@ -458,8 +460,7 @@ margin-left: 20px;
 footer{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    
-    
+
 }
 .footer__list{
     display: flex;
@@ -484,6 +485,31 @@ footer{
     .nav__list{
         grid-gap: 10px;
     }
+    .nav__item{
+        font-size: 0.8rem;
+    }
+    .features{
+        margin: 27px auto;
+    }
+
+    .features__item
+{
+    max-width: 180px;
+    padding: 13px 17px;
+}
+.features__item-text{
+    font-size: 0.8rem;
+}
+}
+@media screen and (max-width: 810px){
+.features__list{
+    flex-wrap: wrap;
+
+}
+.features__item{
+    width: 100%;
+    margin-top: 10px;
+}
 }
 @media screen and (max-width: 768px){
     .nav__list{
@@ -494,4 +520,77 @@ footer{
         display: block;
         
     }
+}
+@media screen and (max-width: 768px){
+    .nav__list{
+        display: none;
+        padding-top: 15%;
+    }
+    
+    .burger{
+        display: block;
+        
+    }
+    .cta__subheader{
+        font-size: 0.9rem;
+    }
+    .cta__slide-header{
+        font-size: 1.3rem;
+    }
+    .cta__slide-text{
+        font-size: 0.8rem;
+    }
+.capabilities__list{
+    flex-direction: column;
+    align-items: center;
+}
+.capabilities__item{
+    width: 80%;
+    margin-bottom: 15px;
+}
+.clients__list{
+    grid-gap: 10px;
+}
+.clients__item{
+    width: 45%;
+    
+}
+.clients_wrap{
+    min-height: 135px;
+}
+.clients__discription{
+    font-size: 1rem;
+}
+.sertificates{
+    padding: 0 10px;
+}
+.sertificates__list .clients__item{
+    min-height: 340px;
+}
+.contacts__wrap{
+    flex-direction: column;
+}
+.contacts__address{
+    width: 90%;
+}
+.map_google{
+    width: 90%;
+}
+.partners{
+    display: none;
+}
+.address-features__list{
+    flex-wrap: wrap;
+}
+.address-features__item{
+    width: 100%;
+    margin: 10px;
+}
+}
+@media screen and (max-width: 590px){
+    .clients__item{
+        width: 90%;
+        
+    }
+
 }

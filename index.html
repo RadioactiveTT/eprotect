@@ -10,8 +10,10 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="img/Eprotectico.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
+ 
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/car.css">
     <title>ООО "Электрозащита"</title>
 
 </head>
@@ -24,39 +26,39 @@
         <nav>
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="#">О нас</a>
+                    <a href="#about">О нас</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">Возможности</a>
+                    <a href="#possib">Возможности</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">Клиенты</a>
+                    <a href="#clients">Клиенты</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">Сертификаты</a>
+                    <a href="#sert">Сертификаты</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">Отзывы</a>
+                    <a href="#feedback">Отзывы</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">Реквизиты</a>
+                    <a href="#req">Реквизиты</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">Контактная информация</a>
+                    <a href="#cont">Контактная информация</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#">Партнеры</a>
+                    <a href="#part">Партнеры</a>
                 </li>
             </ul>
 
         </nav>
         
-            <a href="#" class="burger">
+            <a class="burger">
             </a>
         
     </header>
-    <main class="main">
-        <section class="cta">
+  <main class="main">
+        <section class="cta" id="about">
             <h1 class="visually-hidden">ООО Электрозащита. Содержание.</h1>
             <ul class="cta__slider">
 
@@ -119,7 +121,7 @@
 
         </section>
 
-        <section class="capabilities">
+        <section class="capabilities" id="possib">
             <h3 class="visually-hidden">Возможности организации</h3>
             <ul class="capabilities__list">
                 <li class="capabilities__item">
@@ -141,7 +143,7 @@
             </ul>
         </section>
 
-        <section class="clients">
+        <section class="clients" id="clients">
 
             <h3 class="clients__header" tabindex="0">Наши клиенты</h3>
             <p class="clients_text">
@@ -207,12 +209,93 @@
             <a href="#" class="clients__link btn">Связаться с нами</a>
 
         </section>
-        <section class="feedback">
-            <h3 class="feedback__header">
-                Отзывы наших клиентов
-            </h3>
-           
+    
+        <section class="feedback" id="feedback">
+            <div class="feedback_wrap">
+                <h2>Отзывы наших клиентов</h2>
+            </div>
         </section>
+
+        <section class="sertificates_wrap">
+            <div class="sertificates_carousel">
+                <div class="carousel">
+                    <div class="carousel__nav">
+                        <span id="moveLeft" class="carousel__arrow">
+                            <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                            </svg>
+                        </span>
+                        <span id="moveRight" class="carousel__arrow">
+                            <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="carousel-item carousel-item--1">
+                        <div class="carousel-item__image"></div>
+                        <div class="carousel-item__info">
+                            <div class="carousel-item__container">
+                                
+                                <h3 class="carousel-item__title">Могилевская Детская областная больница</h3>
+                                <p class="carousel-item__description">Производство работ по пуско-наладке пожарной сигнализации.</p>
+                                <a href="../img/sert/review/0001.jpg" target="blank"
+                                    class="carousel-item__btn">Увеличить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item--2">
+                        <div class="carousel-item__image"></div>
+                        <div class="carousel-item__info">
+                            <div class="carousel-item__container">
+                                
+                                <h3 class="carousel-item__title">Могилевское отделение Белорусской железной дороги</h3>
+                                <p class="carousel-item__description">Проектирование, монтаж и наладка систем пожарной сигнализации и пожаротушения.</p>
+                                <a href="./img/sert/review/0002.jpg" target="blank"
+                                    class="carousel-item__btn">Увеличить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item--3">
+                        <div class="carousel-item__image"></div>
+                        <div class="carousel-item__info">
+                            <div class="carousel-item__container">
+                                <h3 class="carousel-item__title">ООО "Беламаркет"</h3>
+                                <p class="carousel-item__description">Монтаж и техническое обслуживание систем пожарной и охранной сигнализации.</p>
+                                <a href="./img/sert/review/0003.jpg" target="blank"
+                                    class="carousel-item__btn">Увеличить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carousel-item--4">
+                        <div class="carousel-item__image"></div>
+                        <div class="carousel-item__info">
+                            <div class="carousel-item__container">
+                                <h3 class="carousel-item__title">Могилевское отделение Белорусской Железной Дороги</h3>
+                                <p class="carousel-item__description">Производство работ и обслуживание пожарной и охранной сигнализации с 2008 года.</p>
+                                <a href="./img/sert/review/0004.jpg" target="blank"
+                                    class="carousel-item__btn">Увеличить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item carousel-item--5">
+                        <div class="carousel-item__image"></div>
+                        <div class="carousel-item__info">
+                            <div class="carousel-item__container">
+                                <h3 class="carousel-item__title">Могилевские Электрические Сети</h3>
+                                <p class="carousel-item__description">Техническое обслуживание систем охраны и пожарной автоматики с 2009 года.</p>
+                                <a href="./img/sert/review/0005.jpg" target="blank"
+                                    class="carousel-item__btn">Увеличить</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <section class="features">
             <h3 class="visually-hidden">
                 Особенности организации
@@ -249,7 +332,8 @@
                 </li>
             </ul>
         </section>
-        <section class="sertificates">
+       
+        <section class="sertificates" id="sert">
             <h3 class="sertificates__header" tabindex="0">Сертификаты</h3>
             <p class="sertificates__text">
                 Полный комплект документации для ведения работ по проектированию, монтажу, техническому обслуживанию
@@ -332,8 +416,8 @@
 
 
         </section>
-
-        <section class="contacts">
+  
+        <section class="contacts" id="cont">
 
             <h3 class="contacts__header" tabindex="0">Наши реквизиты</h3>
 
@@ -370,6 +454,7 @@
             </div>
 
         </section>
+       
         <section class="address-features">
             <h3 class="visually-hidden">Ссылки на адрес, телефон и электронную почту</h3>
             <ul class="address-features__list">
@@ -394,7 +479,7 @@
                 </li>
             </ul>
         </section>
-        <section class="partners">
+        <section class="partners" id="part">
             <h3 class="visually-hidden">Партнеры компании</h3>
             <div class="partners__wrap">
             <img src="./img/bolid.png" alt="НПО Болид" class="partners__item">
@@ -403,6 +488,7 @@
             <img src="./img/novatech.png" alt="Новатех" class="partners__item">
         </div>
         </section>
+  
     </main>
 
 
@@ -429,6 +515,7 @@
     <script src="./js/map.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="./js/slick.js"></script>
+    <script src="./js/car.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
 

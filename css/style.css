@@ -37,6 +37,8 @@ top: 0;
 z-index: 200;
 font-size: 0.9rem;
 }
+
+
 .logo__text{
 flex-grow: 1;
 white-space: nowrap;
@@ -54,18 +56,37 @@ font-size: 20px;
 .nav__item:hover{
 color: rgba(255, 255, 255, 0.747);
 }
-.mobile{
-    display: none;
+
+.header.mobile{
+    height: 100%;
+    flex-direction: column;
+}
+.header.mobile nav{
+    height: 100%;
+ 
+}
+.header.mobile .nav__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+.header.mobile .burger{
+    position: absolute;
+    right: 15px;
+    top: 18px;
+}
+.header.mobile .nav__item{
+    text-align: center;
 }
 .burger{
     background-image: url(../img/burger.svg);
     width: 25px;
     height: 25px;
     background-size: cover;
-    display: block;
+    display: none;
     fill: #fff;
-    margin-left: 15px;
-    
+    margin-left: 15px;    
 }
 .hide{
     display: none;
@@ -469,7 +490,7 @@ footer{
         display: none;
     }
     
-    .mobile{
+    .burger{
         display: block;
         
     }

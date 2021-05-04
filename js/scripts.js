@@ -8,3 +8,7 @@ $(document).ready(function(){
 
 });
 
+$('.burger').on('click', function(){
+console.log('click');
+$('.header').toggleClass('mobile')
+});

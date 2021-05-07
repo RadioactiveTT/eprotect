@@ -15,12 +15,24 @@ $(document).ready(function () {
         breakpoint: 756,
         settings: {
           arrows: false,
-          dots: false
+          dots: false,
         }
       }
     ]
   });
-
+$('.feedback__slider').slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
+  responsive: [
+    {
+      breakpoint: 756,
+      settings: {
+        arrows: false,
+        dots: false,
+      }
+    }
+  ]
+})
 $('.burger').on('click', function () {
   console.log('click');
   $('.header').toggleClass('mobile')

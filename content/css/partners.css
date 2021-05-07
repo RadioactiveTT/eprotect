@@ -6,17 +6,26 @@
 body{
     font-size: 18px;
     position: relative;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration: none;
 }
 
 /*Header*/
-
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main{
+    flex: 1;
+}
 header{
     width: 100%;
     background: #23262a;
-    
+    flex: 0;
 }
 .header_top{
     max-width: 1140px;
@@ -38,17 +47,19 @@ height: 40px;
 }
 .logo span{
     color: #ffffff;
-    font-size: 1.5rem;
-    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 15px;
+    display: block;
 }
 /*MAIN*/
 main{
-    background-color: #D9D9DA;
+    background-color: #ffffff;
 }
 .container{
     max-width: 1140px;
     margin: 0 auto;
-    background-color: #D9D9DA;
+    background-color: #ffffff;
     min-height: 81vh;
 }
 .wrap{
@@ -64,11 +75,11 @@ h1{
     font-size: 2rem;
     font-weight: 700;
     color: #23262A;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 1rem;
     }
     .wrap p{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-size: 1rem;
         color: #23262A;
         font-weight: 400;
@@ -87,6 +98,10 @@ h1{
     color: #fff;
     border-radius: 10px;
     transition: background-color, border, color ease-in-out 0.5s;
+    width: 270px;
+display: block;
+text-align: center; 
+margin: 15px;
     }
     .btn:hover{
         background-color:#fff;
@@ -103,6 +118,7 @@ footer{
     display: flex;
     justify-content: center;
     padding: 0 10px;
+    flex: 0;
 }
 .container_footer{
     width: 940px;
@@ -128,7 +144,7 @@ flex-wrap: wrap;
 }
 
 footer a{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto    ', sans-serif;
     font-weight: 300;
     color: #d9d9da;
     font-size: 0.8rem;
@@ -140,4 +156,21 @@ font-weight: 600;
 }
 footer a:hover{
     opacity: 1;
+}
+
+@media screen and (max-width: 748px) {
+    .wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrap img{
+        width: 90%;
+        max-width: 90%;
+    }
+    .wrap a{
+        display: block;
+        width: 260px;
+        text-align: center;
+
+    }
 }

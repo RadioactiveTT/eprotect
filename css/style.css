@@ -201,12 +201,13 @@ border: 3px solid ;
 color: #fff;
 border-radius: 10px;
 transition: background-color, border, color ease-in-out 0.5s;
+cursor: pointer;
 }
 .btn:hover{
     background-color:#fff;
     border: 3px solid #ff0000;
     color: #ff0000;
-
+    cursor: pointer;
 transition: all ease-in-out 0.5s;
 }
 

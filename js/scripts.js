@@ -21,9 +21,14 @@ $(document).ready(function () {
     ]
   });
 
-});
-
 $('.burger').on('click', function () {
   console.log('click');
   $('.header').toggleClass('mobile')
+
+});
+$('.nav__item').on('click',function(){
+  console.log('click');
+  $('.header').removeClass('mobile')
+});
+
 });
